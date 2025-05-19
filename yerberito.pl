@@ -329,7 +329,7 @@ consulta_dinamica('Que elementos tiene una planta en especifico?', PlantaStr, Ve
       )
     ).
 
-% Medicamentos y plantas asociadas (hechos de ejemplo)
+% Medicamentos y plantas asociadas
 medicamento_planta(aspirina, sauce).
 medicamento_planta(morfina, adormidera).
 medicamento_planta(digoxina, digital).
@@ -380,7 +380,7 @@ consulta_dinamica('Que medicamentos provienen de plantas?', _, Ventana) :-
     list_to_set(Medicamentos, Unicos),
     mostrar_resultado(Unicos, Ventana).
 
-% Acciones/efectos de medicamentos (hechos de ejemplo)
+% Acciones/efectos de medicamentos
 accion_medicamento(aspirina, analgesica).
 accion_medicamento(aspirina, antiinflamatoria).
 accion_medicamento(morfina, analgesica).
@@ -408,7 +408,7 @@ consulta_dinamica('Cuales son las acciones o efectos que tienen las plantas?', _
     list_to_set(Acciones, Unicas),
     mostrar_resultado(Unicas, Ventana).
 
-% Significados de acciones/efectos (hechos de ejemplo)
+% Significados de acciones/efectos
 significado_efecto(analgesica, 'Reduce o elimina el dolor').
 significado_efecto(antiinflamatoria, 'Disminuye la inflamacion').
 significado_efecto(hepatoprotectora, 'Protege el higado').
@@ -447,7 +447,7 @@ consulta_dinamica('Acciones o efectos de una planta en especifico', PlantaStr, V
       )
     ).
 
-% Nombre cientifico de plantas (hechos de ejemplo)
+% Nombre cientifico de plantas
 nombre_cientifico(berro, 'Nasturtium officinale').
 nombre_cientifico(boldo, 'Peumus boldus').
 nombre_cientifico(borraja, 'Borago officinalis').
@@ -532,7 +532,7 @@ consulta_dinamica('Cual es el tratamiento y su preparacion para alguna enfermeda
         )
     ).
 
-% Origen de plantas (hechos de ejemplo)
+% Origen de plantas
 origen_planta(berro, europa).
 origen_planta(boldo, sudamerica).
 origen_planta(borraja, europa).
